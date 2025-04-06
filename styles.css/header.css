@@ -2,10 +2,15 @@
   background-color: #EBEBE9;
 }
 
-.menu_items {
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
-  gap: 30px;
-  padding: 45px;
+  gap: 40px; 
+  padding: 20px 0;
+}
+
+.nav-item {
+  list-style: none;
 }
