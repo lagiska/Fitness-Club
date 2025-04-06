@@ -1,0 +1,11 @@
+.header {
+  background-color: #EBEBE9;
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 30px;
+  padding: 45px;
+}
