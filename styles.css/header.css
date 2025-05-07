@@ -2,19 +2,22 @@
   background-color: #EBEBE9;
 }
 
-.logo {
-  position: relative;
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
   padding: 20px
 }
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.nav__container {
+  margin: 10px auto;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   gap: 40px; 
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
-.nav-item {
+.nav__item {
   list-style: none;
 }
