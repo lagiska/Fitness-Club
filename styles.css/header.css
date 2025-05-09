@@ -19,5 +19,9 @@
 }
 
 .nav__item {
+  font-family: 'Roboto';
+  color: #292929;
+  font-size: 20px;
+  font-weight: 500;
   list-style: none;
 }
