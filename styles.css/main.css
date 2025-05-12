@@ -1,0 +1,44 @@
+.main {
+  background-color: #EBEBE9;
+  padding-top: 120px;
+}
+
+.main__wrapper {
+  position: relative;
+}
+
+.main__man {
+  position: absolute;
+  bottom: 0;
+  left:-330px;
+}
+
+.main__title {
+  position: relative;
+  top: -10px;
+  font-size: 160px;
+  padding-left: 140px;
+  font-family: 'Arial';
+  font-weight: 900;
+  color: #CFCFCD;
+}
+
+.main__text {
+  font-size: 20px;
+  max-width: 587px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin-left: auto;
+  position: relative;
+  top: -75px;
+}
+
+.main__text a {
+  display: block;
+  padding: 11px 32px;
+  margin-top: 14px;
+  padding-bottom: 192px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}

@@ -1,0 +1,27 @@
+.header {
+  background-color: #EBEBE9;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  padding: 20px
+}
+.nav__container {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 40px; 
+  padding: 40px 0;
+}
+
+.nav__item {
+  font-family: 'Roboto';
+  color: #292929;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+}
