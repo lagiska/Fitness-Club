@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+.header {
+  background-color: #EBEBE9;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  padding: 20px;
+}
+.nav__container {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+.nav__item {
+  font-family: "Roboto";
+  color: #292929;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.main {
+  background-color: #EBEBE9;
+  padding-top: 120px;
+}
+.main__wrapper {
+  position: relative;
+}
+.main__man {
+  position: absolute;
+  bottom: 0;
+  left: -330px;
+}
+.main__title {
+  position: relative;
+  top: -10px;
+  font-size: 160px;
+  padding-left: 140px;
+  font-family: "Arial";
+  font-weight: 900;
+  color: #CFCFCD;
+}
+.main__text {
+  font-size: 20px;
+  max-width: 587px;
+  font-family: "Roboto";
+  font-weight: 500;
+  margin-left: auto;
+  position: relative;
+  top: -75px;
+  color: #000000;
+}
+.main__text_link {
+  display: block;
+  padding: 11px 32px;
+  margin-top: 14px;
+  padding-bottom: 192px;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #292929;
+}/*# sourceMappingURL=style.css.map */
