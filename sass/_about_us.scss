@@ -1,0 +1,46 @@
+.about_us {
+  background-color: white;
+  margin-top: 150px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__woman {
+    position: absolute;
+    bottom: -150px;
+    right: -300px;
+    width: 953px;
+    height: 596px;
+  }
+
+  &__title {
+    position: absolute;
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 72px;
+    color: #292929;
+  }
+
+  &__text {
+    border: #ff8340 solid 2px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 160px;
+    margin-right: 515px;
+    padding: 400px 10px 5px 10px;
+
+    &_link {
+      display: block;
+      padding: 11px 32px;
+      margin-top: 14px;
+      margin-bottom: 14px;
+      font-size: 20px;
+      font-family: 'Roboto';
+      font-weight: 500;
+      color: #292929;
+    }
+
+  }
+}
