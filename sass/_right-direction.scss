@@ -1,0 +1,23 @@
+.right-direction {
+  background-color: #292929;
+  margin-top: 150px;
+
+  &__wrapper {
+    padding: 20px;
+    color: #FFFFFF;
+  }
+
+  &__title {
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 80px;
+    padding: 25px 0;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 25px 0 35px 0;
+  }
+}

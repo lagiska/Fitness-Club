@@ -56,12 +56,12 @@ a, a:link, a:visited {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 1200px) {
-  .container {
+  .container .container {
     padding: 0 15px;
   }
 }
+
 .header {
   background-color: #EBEBE9;
 }
@@ -129,4 +129,66 @@ a, a:link, a:visited {
   font-family: "Roboto";
   font-weight: 500;
   color: #292929;
+}
+
+.about_us {
+  background-color: white;
+  margin-top: 150px;
+}
+.about_us__wrapper {
+  position: relative;
+}
+.about_us__woman {
+  position: absolute;
+  bottom: -150px;
+  right: -300px;
+  width: 953px;
+  height: 596px;
+}
+.about_us__title {
+  position: absolute;
+  font-family: Arial;
+  font-weight: 900;
+  font-size: 72px;
+  color: #292929;
+}
+.about_us__text {
+  border: #ff8340 solid 2px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 160px;
+  margin-right: 515px;
+  padding: 400px 10px 5px 10px;
+}
+.about_us__text_link {
+  display: block;
+  padding: 11px 32px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #292929;
+}
+
+.right-direction {
+  background-color: #292929;
+  margin-top: 150px;
+}
+.right-direction__wrapper {
+  padding: 20px;
+  color: #FFFFFF;
+}
+.right-direction__title {
+  font-family: Arial;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 25px 0;
+}
+.right-direction__text {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 25px 0 35px 0;
 }/*# sourceMappingURL=style.css.map */
