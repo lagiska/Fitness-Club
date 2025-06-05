@@ -1,6 +1,6 @@
 .about_us {
   background-color: white;
-  margin-top: 150px;
+  margin-top: 40px;
 
   &__wrapper {
     position: relative;
@@ -8,28 +8,32 @@
 
   &__woman {
     position: absolute;
-    bottom: -150px;
-    right: -300px;
-    width: 953px;
-    height: 596px;
+    bottom: 0px;
+    right: -320px;
   }
 
   &__title {
-    position: absolute;
+    position: relative;
+    z-index: 100;
     font-family: Arial;
     font-weight: 900;
     font-size: 72px;
     color: #292929;
+    padding-top: 169px;
+    line-height: 90px;
   }
 
   &__text {
-    border: #ff8340 solid 2px;
+    position: relative;
+    z-index: 50;
+    left: 180px;
+    top: -277px;
+    border: #ff8340 solid 3px;
+    max-width: 562px;
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
-    margin-left: 160px;
-    margin-right: 515px;
-    padding: 400px 10px 5px 10px;
+    padding: 335px 27px 46px 25px;
 
     &_link {
       display: block;
