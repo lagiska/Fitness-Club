@@ -2,6 +2,11 @@
   background-color: #EBEBE9;
   padding-top: 120px;
 
+  @media screen and (max-width: 868px) {
+    padding-top: 5px;
+    max-height: 435px;
+  }
+
   &__wrapper {
     position: relative;
   }
@@ -10,6 +15,15 @@
     position: absolute;
     bottom: 0;
     left:-330px;
+    max-width: 990px;
+    max-height: 990px;
+
+    @media screen and (max-width: 868px) {
+      max-width: 624px;
+      max-height: 624px;
+      left: -55px;
+      bottom: 223px;
+    }
   }
 
   &__title {
@@ -20,6 +34,11 @@
     font-family: 'Arial';
     font-weight: 900;
     color: #CFCFCD;
+
+    @media screen and (max-width: 868px) {
+      font-size: 100px;
+      padding-left: 38px;
+    }
   }
 
   &__text {
@@ -31,6 +50,11 @@
     position: relative;
     top: -75px;
     color: #000000;
+
+    @media screen and (max-width: 868px) {
+      max-width: 363px;
+      top: -195px;
+    }
 
     &_link {
       display: block;

@@ -61,7 +61,7 @@ a, a:link, a:visited {
     padding: 0 15px;
   }
 }
-@media screen and (max-width: 1200px) and (max-width: 768px) {
+@media screen and (max-width: 1200px) and (max-width: 868px) {
   .container .container {
     padding: 0 5px;
   }
@@ -94,7 +94,7 @@ a, a:link, a:visited {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .burger-checkbox {
     position: absolute;
     visibility: hidden;
@@ -173,6 +173,12 @@ a, a:link, a:visited {
   background-color: #EBEBE9;
   padding-top: 120px;
 }
+@media screen and (max-width: 868px) {
+  .main {
+    padding-top: 5px;
+    max-height: 435px;
+  }
+}
 .main__wrapper {
   position: relative;
 }
@@ -180,6 +186,16 @@ a, a:link, a:visited {
   position: absolute;
   bottom: 0;
   left: -330px;
+  max-width: 990px;
+  max-height: 990px;
+}
+@media screen and (max-width: 868px) {
+  .main__man {
+    max-width: 624px;
+    max-height: 624px;
+    left: -55px;
+    bottom: 223px;
+  }
 }
 .main__title {
   position: relative;
@@ -190,6 +206,12 @@ a, a:link, a:visited {
   font-weight: 900;
   color: #CFCFCD;
 }
+@media screen and (max-width: 868px) {
+  .main__title {
+    font-size: 100px;
+    padding-left: 38px;
+  }
+}
 .main__text {
   font-size: 20px;
   max-width: 587px;
@@ -199,6 +221,12 @@ a, a:link, a:visited {
   position: relative;
   top: -75px;
   color: #000000;
+}
+@media screen and (max-width: 868px) {
+  .main__text {
+    max-width: 363px;
+    top: -195px;
+  }
 }
 .main__text_link {
   display: block;
@@ -215,6 +243,12 @@ a, a:link, a:visited {
   background-color: white;
   margin-top: 40px;
 }
+@media screen and (max-width: 868px) {
+  .about_us {
+    max-height: 952px;
+    margin-top: 0;
+  }
+}
 .about_us__wrapper {
   position: relative;
 }
@@ -223,27 +257,46 @@ a, a:link, a:visited {
   bottom: 0px;
   right: -320px;
 }
+@media screen and (max-width: 868px) {
+  .about_us__woman {
+    max-width: 598px;
+    max-height: 374px;
+    right: 0;
+  }
+}
 .about_us__title {
   position: relative;
   z-index: 100;
   font-family: Arial;
   font-weight: 900;
-  font-size: 72px;
+  font-size: clamp(60px, 5vw, 80px);
   color: #292929;
   padding-top: 169px;
   line-height: 90px;
+}
+@media screen and (max-width: 868px) {
+  .about_us__title {
+    padding-top: 30px;
+  }
 }
 .about_us__text {
   position: relative;
   z-index: 50;
   left: 180px;
   top: -277px;
-  border: #ff8340 solid 3px;
+  border: #ff8340 solid 5px;
   max-width: 562px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 20px;
   padding: 335px 27px 46px 25px;
+}
+@media screen and (max-width: 868px) {
+  .about_us__text {
+    max-width: 449px;
+    padding: 250px 10px 5px 10px;
+    left: 85px;
+  }
 }
 .about_us__text_link {
   display: block;
@@ -259,6 +312,11 @@ a, a:link, a:visited {
 .right-direction {
   background-color: #292929;
 }
+@media screen and (max-width: 868px) {
+  .right-direction {
+    max-height: 357px;
+  }
+}
 .right-direction__wrapper {
   padding: 20px;
   color: #FFFFFF;
@@ -266,8 +324,13 @@ a, a:link, a:visited {
 .right-direction__title {
   font-family: Arial;
   font-weight: 900;
-  font-size: 80px;
-  padding: 25px 0;
+  font-size: clamp(55px, 5vw, 80px);
+  padding: 125px 0 25px 0;
+}
+@media screen and (max-width: 868px) {
+  .right-direction__title {
+    padding: 25px 0;
+  }
 }
 .right-direction__text {
   font-family: Roboto;

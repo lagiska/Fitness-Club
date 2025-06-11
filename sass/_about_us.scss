@@ -2,6 +2,11 @@
   background-color: white;
   margin-top: 40px;
 
+  @media screen and (max-width: 868px) {
+    max-height: 952px;
+    margin-top: 0;
+  }
+
   &__wrapper {
     position: relative;
   }
@@ -10,6 +15,12 @@
     position: absolute;
     bottom: 0px;
     right: -320px;
+
+    @media screen and (max-width: 868px) {
+      max-width: 598px;
+      max-height: 374px;
+      right: 0;
+    }
   }
 
   &__title {
@@ -17,10 +28,14 @@
     z-index: 100;
     font-family: Arial;
     font-weight: 900;
-    font-size: 72px;
+    font-size: clamp(60px, 5vw, 80px);
     color: #292929;
     padding-top: 169px;
     line-height: 90px;
+
+    @media screen and (max-width: 868px) {
+      padding-top: 30px;
+    }
   }
 
   &__text {
@@ -28,12 +43,18 @@
     z-index: 50;
     left: 180px;
     top: -277px;
-    border: #ff8340 solid 3px;
+    border: #ff8340 solid 5px;
     max-width: 562px;
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
     padding: 335px 27px 46px 25px;
+
+    @media screen and (max-width: 868px) {
+      max-width: 449px;
+      padding: 250px 10px 5px 10px;
+      left: 85px;
+    }
 
     &_link {
       display: block;
