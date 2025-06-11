@@ -61,6 +61,11 @@ a, a:link, a:visited {
     padding: 0 15px;
   }
 }
+@media screen and (max-width: 1200px) and (max-width: 868px) {
+  .container .container {
+    padding: 0 5px;
+  }
+}
 
 .header {
   background-color: #EBEBE9;
@@ -89,9 +94,90 @@ a, a:link, a:visited {
   list-style: none;
 }
 
+@media screen and (max-width: 868px) {
+  .burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+  }
+  .burger::before, .burger::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+    transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom 0.3s 0.15s, transform 0.3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom 0.3s, transform 0.3s 0.15s;
+  }
+  .nav__container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #292929;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    width: 200px;
+  }
+  .nav__item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .nav__item:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .burger-checkbox:checked ~ .nav__container {
+    transform: translateX(0);
+  }
+}
 .main {
   background-color: #EBEBE9;
   padding-top: 120px;
+}
+@media screen and (max-width: 868px) {
+  .main {
+    padding-top: 5px;
+    max-height: 435px;
+  }
 }
 .main__wrapper {
   position: relative;
@@ -100,6 +186,16 @@ a, a:link, a:visited {
   position: absolute;
   bottom: 0;
   left: -330px;
+  max-width: 990px;
+  max-height: 990px;
+}
+@media screen and (max-width: 868px) {
+  .main__man {
+    max-width: 624px;
+    max-height: 624px;
+    left: -55px;
+    bottom: 223px;
+  }
 }
 .main__title {
   position: relative;
@@ -110,6 +206,12 @@ a, a:link, a:visited {
   font-weight: 900;
   color: #CFCFCD;
 }
+@media screen and (max-width: 868px) {
+  .main__title {
+    font-size: 100px;
+    padding-left: 38px;
+  }
+}
 .main__text {
   font-size: 20px;
   max-width: 587px;
@@ -119,6 +221,12 @@ a, a:link, a:visited {
   position: relative;
   top: -75px;
   color: #000000;
+}
+@media screen and (max-width: 868px) {
+  .main__text {
+    max-width: 363px;
+    top: -195px;
+  }
 }
 .main__text_link {
   display: block;
@@ -133,33 +241,62 @@ a, a:link, a:visited {
 
 .about_us {
   background-color: white;
-  margin-top: 150px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 868px) {
+  .about_us {
+    max-height: 952px;
+    margin-top: 0;
+  }
 }
 .about_us__wrapper {
   position: relative;
 }
 .about_us__woman {
   position: absolute;
-  bottom: -150px;
-  right: -300px;
-  width: 953px;
-  height: 596px;
+  bottom: 0px;
+  right: -320px;
+}
+@media screen and (max-width: 868px) {
+  .about_us__woman {
+    max-width: 598px;
+    max-height: 374px;
+    right: 0;
+  }
 }
 .about_us__title {
-  position: absolute;
+  position: relative;
+  z-index: 100;
   font-family: Arial;
   font-weight: 900;
-  font-size: 72px;
+  font-size: clamp(60px, 5vw, 80px);
   color: #292929;
+  padding-top: 169px;
+  line-height: 90px;
+}
+@media screen and (max-width: 868px) {
+  .about_us__title {
+    padding-top: 30px;
+  }
 }
 .about_us__text {
-  border: #ff8340 solid 2px;
+  position: relative;
+  z-index: 50;
+  left: 180px;
+  top: -277px;
+  border: #ff8340 solid 5px;
+  max-width: 562px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 20px;
-  margin-left: 160px;
-  margin-right: 515px;
-  padding: 400px 10px 5px 10px;
+  padding: 335px 27px 46px 25px;
+}
+@media screen and (max-width: 868px) {
+  .about_us__text {
+    max-width: 449px;
+    padding: 250px 10px 5px 10px;
+    left: 85px;
+  }
 }
 .about_us__text_link {
   display: block;
@@ -174,7 +311,11 @@ a, a:link, a:visited {
 
 .right-direction {
   background-color: #292929;
-  margin-top: 150px;
+}
+@media screen and (max-width: 868px) {
+  .right-direction {
+    max-height: 357px;
+  }
 }
 .right-direction__wrapper {
   padding: 20px;
@@ -183,8 +324,13 @@ a, a:link, a:visited {
 .right-direction__title {
   font-family: Arial;
   font-weight: 900;
-  font-size: 80px;
-  padding: 25px 0;
+  font-size: clamp(55px, 5vw, 80px);
+  padding: 125px 0 25px 0;
+}
+@media screen and (max-width: 868px) {
+  .right-direction__title {
+    padding: 25px 0;
+  }
 }
 .right-direction__text {
   font-family: Roboto;

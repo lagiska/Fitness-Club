@@ -1,6 +1,9 @@
 .right-direction {
   background-color: #292929;
-  margin-top: 150px;
+
+  @media screen and (max-width: 868px) {
+    max-height: 357px;
+  }
 
   &__wrapper {
     padding: 20px;
@@ -10,8 +13,12 @@
   &__title {
     font-family: Arial;
     font-weight: 900;
-    font-size: 80px;
-    padding: 25px 0;
+    font-size: clamp(55px, 5vw, 80px);
+    padding: 125px 0 25px 0;
+
+    @media screen and (max-width: 868px) {
+      padding: 25px 0;
+    }
   }
 
   &__text {
