@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/ArialMT.eot");
+  src: url("../fonts/ArialMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -286,7 +300,7 @@ a, a:link, a:visited {
   top: -277px;
   border: #ff8340 solid 5px;
   max-width: 562px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 20px;
   padding: 335px 27px 46px 25px;
@@ -322,7 +336,7 @@ a, a:link, a:visited {
   color: #FFFFFF;
 }
 .right-direction__title {
-  font-family: Arial;
+  font-family: "Arial";
   font-weight: 900;
   font-size: clamp(55px, 5vw, 80px);
   padding: 125px 0 25px 0;
@@ -333,7 +347,7 @@ a, a:link, a:visited {
   }
 }
 .right-direction__text {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 20px;
   padding: 25px 0 35px 0;
