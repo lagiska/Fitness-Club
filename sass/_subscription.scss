@@ -1,0 +1,130 @@
+.subscr {
+  background-color: white;
+  margin: 40px 0;
+
+  @media screen and (max-width: 868px) {
+    max-height: 1220px;
+    margin-top: 0;
+  }
+
+  &__title {
+    font-family: 'Arial';
+    font-weight: 900;
+    font-size: clamp(60px, 5vw, 80px);
+    padding: 20px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+
+    @media screen and (max-width: 868px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__item {
+    height: 624px;
+    border: 6px solid #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    
+    &:nth-child(3) {
+      border: 6px solid #FF8340;
+      align-self: flex-start;
+      height: 686px;
+      text-align: center;
+      margin-top: -21px;
+
+      @media screen and (max-width: 868px) {
+        margin: 0;
+      }
+
+      .subscr__item_number {
+        color: #FF8340;
+        font-family: 'Arial';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 68px;
+        width: 76px;
+        height: 76px;
+        text-align: center;
+        border: 4px solid #FF8340;
+        border-radius: 50%;
+        margin: 10px;
+
+
+      }
+    }
+
+    
+    @media screen and (max-width: 868px) {
+      max-height: 248px;
+      border: 6px solid #292929;  
+      border-collapse: collapse; 
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-areas: "a c d"
+                           "b c e";
+      gap: 10px;
+    }
+
+    &_number {
+      font-family: 'Arial';
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 68px;
+      width: 76px;
+      height: 76px;
+      text-align: center;
+      border: 4px solid #292929;
+      border-radius: 50%;
+      margin: 10px;
+      grid-area: a;
+    }
+
+    &_month {
+      font-family: Arial;
+      font-weight: 900;
+      font-size: 20px;
+      margin: 10px;
+      grid-area: b;
+    }
+
+    &_text {
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px 0;
+      grid-area: c;
+    }
+
+    &_price {
+      font-family: Arial;
+      font-weight: 900;
+      font-size: 45px;
+      line-height: 100%;
+      text-align: right;
+      vertical-align: middle;
+      padding: 15px 0;
+      grid-area: d;
+    }
+
+    &_button {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 100%;
+      padding: 15px 0;
+      margin: 0 auto;
+      grid-area: e;
+    }
+  }
+
+
+}
