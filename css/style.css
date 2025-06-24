@@ -367,7 +367,7 @@ a, a:link, a:visited {
   font-family: "Arial";
   font-weight: 900;
   font-size: clamp(60px, 5vw, 80px);
-  padding: 20px 0;
+  padding: 30px 0;
 }
 .subscr__wrapper {
   display: flex;
@@ -380,7 +380,7 @@ a, a:link, a:visited {
   }
 }
 .subscr__item {
-  height: 624px;
+  max-height: 624px;
   border: 6px solid #292929;
   display: flex;
   align-items: center;
@@ -388,19 +388,19 @@ a, a:link, a:visited {
   flex-direction: column;
   padding: 30px 20px;
 }
-.subscr__item:nth-child(3) {
+.subscr__item:hover {
   border: 6px solid #FF8340;
   align-self: flex-start;
   height: 686px;
   text-align: center;
-  margin-top: -21px;
+  margin: -21px 0;
 }
 @media screen and (max-width: 868px) {
-  .subscr__item:nth-child(3) {
+  .subscr__item:hover {
     margin: 0;
   }
 }
-.subscr__item:nth-child(3) .subscr__item_number {
+.subscr__item:hover .subscr__item_number {
   color: #FF8340;
   font-family: "Arial";
   font-weight: 700;
