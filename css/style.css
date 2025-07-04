@@ -472,4 +472,49 @@ a, a:link, a:visited {
   padding: 15px 0;
   margin: 0 auto;
   grid-area: e;
+}
+
+.forms {
+  background-color: #FF8340;
+  margin-top: 40px;
+}
+.forms__title {
+  font-family: "Arial";
+  font-weight: 900;
+  font-style: #292929;
+  font-size: clamp(32px, 5vw, 45px);
+  padding: 40px 0;
+  text-align: center;
+}
+.forms__line {
+  background-color: #292929;
+  width: 64px;
+  height: 6px;
+  display: block;
+  margin: auto;
+}
+.forms__text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  padding: 40px 10px;
+}
+.forms__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: clamp(888px, 5vw, 1200px);
+}
+.forms__wrapper-select {
+  color: #292929;
+  box-sizing: border-box;
+  width: 49%;
+}
+.forms__wrapper-input {
+  box-sizing: border-box;
+  width: 49%;
+}
+.forms__wrapper-feedback {
+  box-sizing: border-box;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

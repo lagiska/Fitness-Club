@@ -1,0 +1,51 @@
+.forms {
+  background-color: #FF8340;
+  margin-top: 40px;
+
+  &__title {
+    font-family: 'Arial';
+    font-weight: 900;
+    font-style: #292929;
+    font-size: clamp(32px, 5vw, 45px);
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  &__line {
+    background-color: #292929;
+    width: 64px;
+    height: 6px;
+    display: block;
+    margin: auto;
+  }
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    padding: 40px 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: clamp(888px, 5vw, 1200px);
+
+    &-select {
+      color: #292929;
+      box-sizing: border-box;
+      width: 49%;
+    }
+
+    &-input {
+      box-sizing: border-box;
+      width: 49%;
+    }
+
+    &-feedback {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+}
