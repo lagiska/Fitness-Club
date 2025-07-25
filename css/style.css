@@ -509,7 +509,7 @@ a, a:link, a:visited {
   row-gap: 8%;
   -moz-column-gap: 4%;
        column-gap: 4%;
-  grid-template-areas: "1 2" "3 4" "5 5";
+  grid-template-areas: "1 2" "3 4";
 }
 .forms__wrapper-select {
   grid-area: 1;
@@ -523,8 +523,7 @@ a, a:link, a:visited {
 .forms__wrapper-input2 {
   grid-area: 4;
 }
-.forms__wrapper-feedback {
-  grid-area: 5;
+.forms_feedback {
   box-sizing: border-box;
   width: 100%;
   height: 198px;
